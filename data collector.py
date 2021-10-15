@@ -8,8 +8,9 @@ if os.path.exists('./key.txt'):
             print('Invalid key')
             sys.exit()
 else:
-    with open('key.txt', 'r') as file:
+    with open('key.txt', 'w') as file:
         file.write('PUT YOUR KEY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        sys.exit()
 
 
 dota_id = '570' # 205790
